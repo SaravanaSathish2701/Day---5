@@ -1,0 +1,36 @@
+// Create a class circle
+
+class Circle{
+    Constructor(radius,colour){
+            this.radius = radius;
+            this.colour = colour;
+    }
+    get radiusCircle(){
+        return this.radius;
+    }
+    set radiusCircle(radius){
+        return this.radius = radius;
+    }
+    get ColourCircle(){
+        return this.colour;
+    }
+    set ColourCircle(colour){
+        return this.colour = colour;
+    }
+    get toString(){
+        return `Circle[radius:${this.radius} and colour:${this.colour}]`;
+    }
+    get AreaCircle(){
+         return Math.PI*2*this.radius;
+    }
+    get CircumferenceCircle(){
+        return 2*Math.PI*this.radius;
+    }
+}
+
+let circle = new Circle(1.0,"red");
+console.log(circle.radiusCircle = 1.5);
+console.log(circle.CircleColour = "Blue");
+console.log(circle.toString);
+console.log(circle.AreaCircle);
+console.log(circle.CircumferenceCircle);
